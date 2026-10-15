@@ -4,7 +4,7 @@ SHELL := pwsh.exe
 PYTHON ?= python
 PROJECT_ROOT := $(CURDIR)
 PYTHONPATH_VALUE := $(PROJECT_ROOT)\backend
-KNOWLEDGE_DOC ?= C:\Users\G\Downloads\GreenHell_AI_RAG_Full_Knowledge.md
+KNOWLEDGE_DOC ?= $(PROJECT_ROOT)\knowledge\GreenHell_AI_RAG_Full_Knowledge.md
 
 .PHONY: help install qdrant-up qdrant-down qdrant-status logs ingest evaluate api test clean
 
@@ -27,7 +27,7 @@ logs:
 	docker compose logs -f --tail=100 qdrant
 
 ingest:
-	$$env:PYTHONPATH = '$(PYTHONPATH_VALUE)'; $$env:QDRANT_COLLECTION = if ($$env:QDRANT_COLLECTION) { $$env:QDRANT_COLLECTION } else { 'knowledge' }; .\.venv\Scripts\python.exe .\scripts\ingest_knowledge.py '$(KNOWLEDGE_DOC)'
+	$$env:PYTHONPATH = '$(PYTHONPATH_VALUE)'; $$env:QDRANT_COLLECTION = if ($$env:QDRANT_COLLECTION) { $$env:QDRANT_COLLECTION } else { 'green-hell' }; .\.venv\Scripts\python.exe .\scripts\ingest_knowledge.py '$(KNOWLEDGE_DOC)'
 
 evaluate:
 	$$env:PYTHONPATH = '$(PYTHONPATH_VALUE)'; $$env:QDRANT_COLLECTION = if ($$env:QDRANT_COLLECTION) { $$env:QDRANT_COLLECTION } else { 'knowledge' }; .\.venv\Scripts\python.exe .\scripts\evaluate_retrieval.py

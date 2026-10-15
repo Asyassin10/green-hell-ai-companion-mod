@@ -77,7 +77,7 @@ Copy `releases\GreenHellAICompanion.dll` to the game plugin directory, then laun
 .\Makefile.ps1 test
 ```
 
-The `ingest` target reads `C:\Users\G\Downloads\GreenHell_AI_RAG_Full_Knowledge.md` by default. To use another file:
+The `ingest` target reads `knowledge\GreenHell_AI_RAG_Full_Knowledge.md` by default. To use another file:
 
 ```powershell
 $env:PYTHONPATH = (Get-Location).Path + '\backend'

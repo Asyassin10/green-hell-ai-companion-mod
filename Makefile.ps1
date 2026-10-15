@@ -9,7 +9,7 @@ switch ($Target) {
   'qdrant-down' { docker compose down }
   'qdrant-status' { docker compose ps qdrant; Invoke-RestMethod http://localhost:6333/collections | ConvertTo-Json -Depth 4 }
   'logs' { docker compose logs -f --tail=100 qdrant }
-  'ingest' { if (-not $env:QDRANT_COLLECTION) { $env:QDRANT_COLLECTION = 'knowledge' }; & $pythonExe .\scripts\ingest_knowledge.py 'C:\Users\G\Downloads\GreenHell_AI_RAG_Full_Knowledge.md' }
+  'ingest' { if (-not $env:QDRANT_COLLECTION) { $env:QDRANT_COLLECTION = 'green-hell' }; & $pythonExe .\scripts\ingest_knowledge.py '.\knowledge\GreenHell_AI_RAG_Full_Knowledge.md' }
   'evaluate' { if (-not $env:QDRANT_COLLECTION) { $env:QDRANT_COLLECTION = 'knowledge' }; & $pythonExe .\scripts\evaluate_retrieval.py }
   'api' { & $pythonExe -m uvicorn app.main:app --host 127.0.0.1 --port 8000 }
   'test' { & $pythonExe -m pytest -q .\backend\tests }
