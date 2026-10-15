@@ -86,6 +86,13 @@ python scripts\ingest_knowledge.py 'C:\path\to\knowledge.md'
 
 Ingestion creates or replaces the configured cosine collection, splits Markdown by gameplay headings, preserves section and mode metadata, embeds chunks with Titan V2, and skips ingestion or AI-instruction sections.
 
+The included starter corpus is stored at `knowledge\GreenHell_AI_RAG_Full_Knowledge.md`, so a fresh clone can ingest it without depending on a personal Downloads folder:
+
+```powershell
+.\Makefile.ps1 qdrant-up
+.\Makefile.ps1 ingest
+```
+
 ## Configuration
 
 Copy `.env.example` to `.env`. Never commit `.env` or paste credentials into source control.
