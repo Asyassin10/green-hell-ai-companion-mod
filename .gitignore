@@ -1,0 +1,32 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.log
+api-runtime.log
+qdrant_storage/
+*.db
+*.sqlite
+*.sqlite3
+build/
+dist/
+*.egg-info/
+
+# Local mod build output and private game files
+*.dll
+*.pdb
+!releases/
+!releases/GreenHellAICompanion.dll
+game-install/
+steam-install/
+
+# IDE and OS files
+.vscode/
+.idea/
+*.user
+*.suo
+Thumbs.db
+Desktop.ini

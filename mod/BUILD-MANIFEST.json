@@ -1,0 +1,61 @@
+{
+  "plugin": "GreenHellAI",
+  "version": "0.3.0",
+  "process": "GH.exe",
+  "platform": "x64",
+  "buildUtc": "2026-10-15T22:30:27.4730716Z",
+  "compilerVersion": "14.8.10001.0 built by: bd501acdc000004",
+  "compilerExitCode": 0,
+  "warningsAsErrors": true,
+  "language": "C# 5",
+  "bepinexRelease": "5.4.23.5",
+  "bepinexCoreSha256": "8255b28902886085c578b9e427d3073c97002db85176d2090cdeda90ef14ce70",
+  "gameAssemblySha256": "40279b7fda17867f4cfc3e3be0e3bbae7df20bdb5b3b3c9fde0a2827d9862838",
+  "outputSha256": "2b7abb38d6f33b18dd9d89e142237e3bf0c9e09eaaaa944593d65524d818325a",
+  "sources": [
+    {
+      "path": "src/BackendClient.cs",
+      "sha256": "eb8d40dadab4aa6fe0dde03a5a2a18c7eebf315893247289809d5c0db3999c8a"
+    },
+    {
+      "path": "src/ChatHistory.cs",
+      "sha256": "4c5137766b44f4efbec01aa8a3a987187d32f1a4a402a08ee83f096fc0e8942d"
+    },
+    {
+      "path": "src/ChatUi.cs",
+      "sha256": "e265965f3c31af5696b93a10db5a17ba36c4b2e9edb248555d78f37d970fb76f"
+    },
+    {
+      "path": "src/FocusLease.cs",
+      "sha256": "806aee9436625df639388cce7dc5a2188e30af095f459b015a9baf5800608bcf"
+    },
+    {
+      "path": "src/GameChatContext.cs",
+      "sha256": "b1a8f6e44190dfc0ffc582a72e52fee72476bed144823df7ff33a30ef3212998"
+    },
+    {
+      "path": "src/GameStateReader.cs",
+      "sha256": "dfc6f09a52246bf589c7bb0388c65d736c5829dd29620e966ff12b431ecd917c"
+    },
+    {
+      "path": "src/MarkdownRichText.cs",
+      "sha256": "7774fec4799955a0f9591af092030738c6be66d344779d898ac81a651ffad545"
+    },
+    {
+      "path": "src/NotebookSkin.cs",
+      "sha256": "5f063e939fc0e1218bc720eb00351193b3d61f2fe268cd4ffdc7698b1b6c6f5e"
+    },
+    {
+      "path": "src/Plugin.cs",
+      "sha256": "2b98f17f1ea0ff2e6e5bd7f35898b7316c1db1727e37cd2eeefa276bfc00cde7"
+    },
+    {
+      "path": "src/Snapshot.cs",
+      "sha256": "739a880b471b854e2dee87de023a91172a63fb559ec9e6aa6f44921b086593af"
+    }
+  ],
+  "phase": 3,
+  "phase1Runtime": "User reported pass; read-only inspection of log confirmed four samples.",
+  "runtimeTested": false,
+  "installedInGame": false
+}
